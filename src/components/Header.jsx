@@ -8,7 +8,7 @@ import AppsIcon from '@mui/icons-material/Apps';
 
 const Header = ({ setPath }) => {
     const [value, setValue] = useState(1);
-    return <Box sx={{ position: 'fixed', top: 0, left: 0, right: 0 }} elevation={3}>
+    return <Box sx={{ position: 'fixed', top: 0, left: 0, right: 0 }}>
             <div className='shadow'>
                 <BottomNavigation
                     showLabels

@@ -10,10 +10,10 @@ const Contacts = () => {
                 rel="noreferrer"
             >anastasiya-perih</a></li>
             <li><b>GitHub:</b> <a
-                href="https://github.com/unicorn1408"
+                href="https://github.com/anastasia-in-code"
                 target="_blank"
                 rel="noreferrer"
-            >unicorn1408</a></li>
+            >anastasia-in-code</a></li>
         </ul>
     </div>
 }

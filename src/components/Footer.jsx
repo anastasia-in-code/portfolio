@@ -10,9 +10,9 @@ const Footer = () => {
                 <br />
                 Cell: <Link href="tel:+15517992167">+1 (551) 799-21-67</Link>
                 <br />
-                LinkedIn: <Link href="https://www.linkedin.com/in/anastasiya-perih/" target="_blank" rel="noopener noreferrer">linkedin.com/in/anastasiya-perih/</Link>
+                LinkedIn: <Link href="https://www.linkedin.com/in/anastasiia-perih/" target="_blank" rel="noopener noreferrer">linkedin.com/in/anastasiya-perih/</Link>
                 <br />
-                GitHub: <Link href="https://github.com/unicorn1408" target="_blank" rel="noopener noreferrer">github.com/unicorn1408</Link>
+                GitHub: <Link href="https://github.com/anastasia-in-code" target="_blank" rel="noopener noreferrer">github.com/unicorn1408</Link>
             </Typography>
         </Container>
     </Paper>

@@ -1,15 +1,21 @@
 .App {
   height: 100vh;
+  margin: 0;
   background-color: #f9f7f3;
   color: #181817;
 }
 
 .highlight {
-  color: #274534;
+  color: #1976D2;
+}
+
+.project {
+  display: flex;
 }
 
 .achive {
   list-style-type: disc;
+  margin: 20px;
 }
 
 .shadow {
@@ -25,10 +31,8 @@
   justify-content: center;
   gap: 20px;
   height: 60%;
-  margin-top: 5%;
+  padding-top: 5%;
 }
-
-
 
 .info {
   margin: 5%;
@@ -49,13 +53,17 @@ a {
   width: 45%
 }
 
-.resume {
-  margin: 20%;
+.center {
+  display: flex;
+  justify-content: center;
 }
+ 
+/* .resume {
+  margin: 20%;
+} */
 
 .tools {
   height: 100px;
-  /* background-color:  #274534; */
   display: flex;
   justify-content: space-around;
   padding: 10px;
