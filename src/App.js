@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import {useState} from 'react'
+
+import {
+  ThemeProvider,
+} from '@mui/material/styles';
+
+import theme from './theme';
+
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Me from './pages/Me';
+import ResumeComponent from './pages/Experience';
 
 function App() {
+  const [path, setPath] = useState('')
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <Header setPath={setPath}/>
+        {path === 0 && <Me />}
+        {path === 1 && <ResumeComponent />}
+        
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 
