@@ -57,10 +57,6 @@ a {
   display: flex;
   justify-content: center;
 }
- 
-/* .resume {
-  margin: 20%;
-} */
 
 .tools {
   height: 100px;
@@ -69,3 +65,18 @@ a {
   padding: 10px;
 }
 
+.projects {
+  display: flex;
+  justify-content: space-between;
+  gap:20px;
+  flex-wrap: wrap;
+}
+
+.projects img {
+  width: 20vw;
+  border-radius: 15px;
+}
+
+.proj {
+  padding-top: 15px;
+}

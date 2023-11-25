@@ -1,20 +1,18 @@
 import React from 'react';
-import { Container, Typography, Paper, List, ListItem, Button, ListItemText } from '@mui/material';
+import { Container, Paper, List, Button } from '@mui/material';
 
 const ResumeComponent = () => {
     return (
         <Container sx={{ pt: 10, pb: 20 }}>
-            <Typography variant="h5" sx={{ marginBottom: 2 }}>
-                Professional Experience
-            </Typography>
-
+            <h2>
+                My professional experience:
+            </h2>
             <Paper elevation={3} sx={{ padding: 2, marginBottom: 2 }}>
-                <Typography variant="h6" sx={{ marginBottom: 1 }}>
-                    Full Stack Software Engineer at DataArt (Jan 2021 - Oct 2023)
-                </Typography>
-                <Typography variant="subtitle1" sx={{ marginBottom: 1 }}>
+                <h2><b className='highlight'>Full Stack Software Engineer</b> at DataArt (Jan 2021 - Oct 2023)</h2>
+
+                <h3>
                     Projects:
-                </Typography>
+                </h3>
                 <List>
                     <div className='project'>
                         <div>

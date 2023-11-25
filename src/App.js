@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Me from './pages/Me';
 import ResumeComponent from './pages/Experience';
+import Projects from './pages/Projects';
 
 function App() {
   const [path, setPath] = useState('')
@@ -21,7 +22,7 @@ function App() {
         <Header setPath={setPath}/>
         {path === 0 && <Me />}
         {path === 1 && <ResumeComponent />}
-        
+        {path === 2 && <Projects/>}
         <Footer />
       </div>
     </ThemeProvider>
