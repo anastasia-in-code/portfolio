@@ -1,20 +1,29 @@
 import React from 'react';
-import { Container, Typography, Paper, List, ListItem, Button, ListItemText } from '@mui/material';
+import { Container, Paper, List, Button } from '@mui/material';
+import resume from '../resume.zip'
 
 const ResumeComponent = () => {
+
+    const handleDownload = () => {
+        const fileUrl = resume;
+        const link = document.createElement('a');
+        link.href = fileUrl;
+        link.download = 'downloaded-file.zip';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
     return (
         <Container sx={{ pt: 10, pb: 20 }}>
-            <Typography variant="h5" sx={{ marginBottom: 2 }}>
-                Professional Experience
-            </Typography>
-
+            <h2>
+                My professional experience:
+            </h2>
             <Paper elevation={3} sx={{ padding: 2, marginBottom: 2 }}>
-                <Typography variant="h6" sx={{ marginBottom: 1 }}>
-                    Full Stack Software Engineer at DataArt (Jan 2021 - Oct 2023)
-                </Typography>
-                <Typography variant="subtitle1" sx={{ marginBottom: 1 }}>
+                <h2><b className='highlight'>Full Stack Software Engineer</b> at DataArt (Jan 2021 - Oct 2023)</h2>
+
+                <h3>
                     Projects:
-                </Typography>
+                </h3>
                 <List>
                     <div className='project'>
                         <div>
@@ -55,16 +64,8 @@ const ResumeComponent = () => {
             </Paper>
 
             <div className='center'>
-                <Button variant="contained">DOWNLOAD RESUME</Button>
+                <Button onClick={handleDownload} variant="contained">DOWNLOAD RESUME</Button>
             </div>
-
-            {/* <Typography variant="h5" sx={{ marginTop: 4, marginBottom: 2 }}>
-                    Skills
-                </Typography>
-                <Typography variant="body1" sx={{ marginBottom: 2 }}>
-                    Languages: JavaScript, TypeScript, HTML, CSS, SQL, JSON
-                </Typography> */}
-
 
         </Container>
     );
