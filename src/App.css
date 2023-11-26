@@ -58,15 +58,15 @@ a {
 
 .buttons {
   display: flex;
-  justify-content: space-between;
-  margin: 5%;
-  width: 45%
+  justify-content: space-around;
+  margin: 4%;
+  width: 40%
 }
 
 .center {
   display: flex;
   justify-content: center;
-  margin: 5%;
+
 }
 
 .tools {
