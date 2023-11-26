@@ -1,7 +1,13 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f7f3;
+  height: 100%;
+}
+
 .App {
   height: 100vh;
   margin: 0;
-  background-color: #f9f7f3;
   color: #181817;
 }
 
@@ -11,6 +17,10 @@
 
 .project {
   display: flex;
+}
+
+.bio {
+  width: 50%;
 }
 
 .achive {
@@ -56,10 +66,12 @@ a {
 .center {
   display: flex;
   justify-content: center;
+  margin: 5%;
 }
 
 .tools {
-  height: 100px;
+  height: 10vh;
+  opacity: 0.7;
   display: flex;
   justify-content: space-around;
   padding: 10px;
@@ -72,14 +84,12 @@ a {
   flex-wrap: wrap;
 }
 
-
 .projects video {
   width: 20vw;
   border-radius: 15px;
   border: solid #181817 1px;
   transition: width 2s, height 4s;
 }
-
 
 .projects video:hover {
   width: 25vw;

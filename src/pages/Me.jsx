@@ -18,7 +18,11 @@ import reduxIcon from '../imgs/icons/redux.png'
 import resume from '../resume.zip'
 
 
-const Me = () => {
+const Me = ({setPath}) => {
+
+    const handleclick = () => {
+        setPath(2)
+    }
 
     const handleDownload = () => {
         const fileUrl = resume;
@@ -43,7 +47,7 @@ const Me = () => {
                 <Card variant="outlined"><About /></Card>
                 <div className='buttons'>
                     <Button onClick={handleDownload} variant="contained">DOWNLOAD RESUME</Button>
-                    {/* <Button variant="contained">HOBBY PROJECTS</Button> */}
+                    <Button onClick={handleclick} variant="contained">HOBBY PROJECTS</Button>
                 </div>
             </div>
 

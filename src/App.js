@@ -20,7 +20,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className="App">
         <Header path={path} setPath={setPath}/>
-        {path === 0 && <Me />}
+        {path === 0 && <Me setPath={setPath}/>}
         {path === 1 && <ResumeComponent />}
         {path === 2 && <Projects/>}
         <Footer />
