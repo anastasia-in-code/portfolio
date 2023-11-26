@@ -1,7 +1,19 @@
 import React from 'react';
 import { Container, Paper, List, Button } from '@mui/material';
+import resume from '../resume.zip'
+
 
 const ResumeComponent = () => {
+
+    const handleDownload = () => {
+        const fileUrl = resume;
+        const link = document.createElement('a');
+        link.href = fileUrl;
+        link.download = 'downloaded-file.zip';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
     return (
         <Container sx={{ pt: 10, pb: 20 }}>
             <h2>
@@ -53,16 +65,8 @@ const ResumeComponent = () => {
             </Paper>
 
             <div className='center'>
-                <Button variant="contained">DOWNLOAD RESUME</Button>
+                <Button onClick={handleDownload} variant="contained">DOWNLOAD RESUME</Button>
             </div>
-
-            {/* <Typography variant="h5" sx={{ marginTop: 4, marginBottom: 2 }}>
-                    Skills
-                </Typography>
-                <Typography variant="body1" sx={{ marginBottom: 2 }}>
-                    Languages: JavaScript, TypeScript, HTML, CSS, SQL, JSON
-                </Typography> */}
-
 
         </Container>
     );

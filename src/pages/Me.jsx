@@ -15,7 +15,20 @@ import mongoIcon from '../imgs/icons/mongodb.png'
 import reactIcon from '../imgs/icons/react.png'
 import reduxIcon from '../imgs/icons/redux.png'
 
+import resume from '../resume.zip'
+
+
 const Me = () => {
+
+    const handleDownload = () => {
+        const fileUrl = resume;
+        const link = document.createElement('a');
+        link.href = fileUrl;
+        link.download = 'downloaded-file.zip';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
     return <>
         <div className='about'>
             <div className='picture'>
@@ -29,8 +42,8 @@ const Me = () => {
             <div className='bio'>
                 <Card variant="outlined"><About /></Card>
                 <div className='buttons'>
-                    <Button variant="contained">DOWNLOAD RESUME</Button>
-                    <Button variant="contained">HOBBY PROJECTS</Button>
+                    <Button onClick={handleDownload} variant="contained">DOWNLOAD RESUME</Button>
+                    {/* <Button variant="contained">HOBBY PROJECTS</Button> */}
                 </div>
             </div>
 
