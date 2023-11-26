@@ -14,12 +14,12 @@ import ResumeComponent from './pages/Experience';
 import Projects from './pages/Projects';
 
 function App() {
-  const [path, setPath] = useState('')
+  const [path, setPath] = useState(0)
 
   return (
     <ThemeProvider theme={theme}>
       <div className="App">
-        <Header setPath={setPath}/>
+        <Header path={path} setPath={setPath}/>
         {path === 0 && <Me />}
         {path === 1 && <ResumeComponent />}
         {path === 2 && <Projects/>}
