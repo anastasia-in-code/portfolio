@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Paper, List, Button } from '@mui/material';
 import resume from '../resume.zip'
 
+
 const ResumeComponent = () => {
 
     const handleDownload = () => {

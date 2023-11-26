@@ -1,7 +1,9 @@
 import { Container } from "@mui/material"
+
 import aiapp from '../videos/aiapp.mp4'
 
 const Projects = () => {
+
 
     return <Container sx={{ pt: 10, pb: 20 }}>
         <h2>My hobby projects:</h2>
@@ -30,6 +32,7 @@ const Project = ({ name, description, link }) => {
                     src={aiapp}
                     muted />
             </a>
+
             <p>{description}</p>
         </div>
 

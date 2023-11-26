@@ -14,7 +14,9 @@ import jiraIcon from '../imgs/icons/jira.png'
 import mongoIcon from '../imgs/icons/mongodb.png'
 import reactIcon from '../imgs/icons/react.png'
 import reduxIcon from '../imgs/icons/redux.png'
+
 import resume from '../resume.zip'
+
 
 const Me = () => {
 
