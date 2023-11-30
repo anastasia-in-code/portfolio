@@ -16,7 +16,7 @@ const Projects = () => {
                 elevate your workout experience.Built with React, GymFlex Pro offers a responsive design, ensuring a seamless experience across various devices, from desktops to mobile devices. GymFlex Pro provides a diverse range of exercises accompanied 
                 by clear instructions to ensure effective and safe training. Powered by React and styled with Material-UI, it's the ultimate companion for achieving your
                  fitness goals. Start your journey to a healthier, stronger you today!"
-                link="https://anastasia-in-code.github.io/portfolio/" gitlink='https://github.com/anastasia-in-code/gym-app' />
+                link="https://anastasia-in-code.github.io/gym-app/" gitlink='https://github.com/anastasia-in-code/gym-app' />
 
             <Project name="Face recognition app"
                 videoSrc={aiapp}
