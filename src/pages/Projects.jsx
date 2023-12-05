@@ -2,6 +2,7 @@ import { Container } from "@mui/material"
 
 import aiapp from '../videos/aiapp.mp4'
 import gymapp from '../videos/gym.mp4'
+import musicapp from '../videos/music-app.mp4'
 
 const Projects = () => {
 
@@ -13,17 +14,19 @@ const Projects = () => {
             <Project name="Gym App"
                 videoSrc={gymapp}
                 description="Introducing GymFlex Pro a fitness project designed to target various muscle groups and 
-                elevate your workout experience.Built with React, GymFlex Pro offers a responsive design, ensuring a seamless experience across various devices, from desktops to mobile devices. GymFlex Pro provides a diverse range of exercises accompanied 
-                by clear instructions to ensure effective and safe training. Powered by React and styled with Material-UI, it's the ultimate companion for achieving your
+                elevate your workout experience. Powered by React and styled with Material-UI, it's the ultimate companion for achieving your
                  fitness goals. Start your journey to a healthier, stronger you today!"
                 link="https://anastasia-in-code.github.io/gym-app/" gitlink='https://github.com/anastasia-in-code/gym-app' />
 
-            <Project name="Face recognition app"
+            {/* <Project name="Face recognition app"
                 videoSrc={aiapp}
                 description="Face Recognition AI is a web application that utilizes external AI services to detect and highlight faces in photos. With this application, you can simply provide a link to a photo, and it will display the photo with the detected face(s) outlined in a square."
-                link="https://face-recognizer-fe-c56d26d8abe4.herokuapp.com/" gitlink='https://github.com/anastasia-in-code/face-recognition' />
-
-
+                link="https://face-recognizer-fe-c56d26d8abe4.herokuapp.com/" gitlink='https://github.com/anastasia-in-code/face-recognition' /> */}
+            
+            <Project name="Music app"
+                videoSrc={musicapp}
+                description="A small React and Tailwind CSS responsive web application serves as a simple music player, offering an intuitive user interface for seamless navigation. "
+                link="https://anastasia-in-code.github.io/music-app/" gitlink='https://github.com/anastasia-in-code/music-app' />
         </div>
 
     </Container>
