@@ -18,10 +18,10 @@ const Projects = () => {
                  fitness goals. Start your journey to a healthier, stronger you today!"
                 link="https://anastasia-in-code.github.io/gym-app/" gitlink='https://github.com/anastasia-in-code/gym-app' />
 
-            {/* <Project name="Face recognition app"
+            <Project name="Face recognition app"
                 videoSrc={aiapp}
                 description="Face Recognition AI is a web application that utilizes external AI services to detect and highlight faces in photos. With this application, you can simply provide a link to a photo, and it will display the photo with the detected face(s) outlined in a square."
-                link="https://face-recognizer-fe-c56d26d8abe4.herokuapp.com/" gitlink='https://github.com/anastasia-in-code/face-recognition' /> */}
+                link="https://anastasia-in-code.github.io/face-recognition/" gitlink='https://github.com/anastasia-in-code/face-recognition' />
             
             <Project name="Music app"
                 videoSrc={musicapp}
