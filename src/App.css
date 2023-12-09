@@ -79,20 +79,19 @@ a {
 
 .projects {
   display: flex;
-  gap:20px;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .projects video {
-  width: 20vw;
+  width: 17vw;
   border-radius: 15px;
   border: solid #181817 1px;
   transition: width 2s, height 4s;
 }
 
 .projects video:hover {
-  width: 25vw;
+  width: 20vw;
 }
 
 .proj {
@@ -110,4 +109,3 @@ a {
   width: 20vw;
   text-align: center; 
 }
-
