@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e0f96147.css",
-    "main.js": "/portfolio/static/js/main.69eeefbd.js",
+    "main.css": "/portfolio/static/css/main.a97f4537.css",
+    "main.js": "/portfolio/static/js/main.ddd18f29.js",
     "static/js/787.d4aba7ab.chunk.js": "/portfolio/static/js/787.d4aba7ab.chunk.js",
     "static/media/aiapp.mp4": "/portfolio/static/media/aiapp.4626c3e30ef0a0084594.mp4",
     "static/media/gym.mp4": "/portfolio/static/media/gym.a35f4dac824884a954a5.mp4",
+    "static/media/tours-agensy.png": "/portfolio/static/media/tours-agensy.915793fbf69492768256.png",
+    "static/media/booking.png": "/portfolio/static/media/booking.f71cea17194984702c6a.png",
     "static/media/music-app.mp4": "/portfolio/static/media/music-app.054b7c0e37a1b6b4161f.mp4",
     "static/media/me2.png": "/portfolio/static/media/me2.026d561142f5321e5965.png",
     "static/media/admin.mp4": "/portfolio/static/media/admin.96c24367902a352aee07.mp4",
     "static/media/resume.zip": "/portfolio/static/media/resume.fcb8f2ec6d7d56481ed5.zip",
     "static/media/react.png": "/portfolio/static/media/react.35387d939640a6722a45.png",
     "index.html": "/portfolio/index.html",
-    "main.e0f96147.css.map": "/portfolio/static/css/main.e0f96147.css.map",
-    "main.69eeefbd.js.map": "/portfolio/static/js/main.69eeefbd.js.map",
+    "main.a97f4537.css.map": "/portfolio/static/css/main.a97f4537.css.map",
+    "main.ddd18f29.js.map": "/portfolio/static/js/main.ddd18f29.js.map",
     "787.d4aba7ab.chunk.js.map": "/portfolio/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e0f96147.css",
-    "static/js/main.69eeefbd.js"
+    "static/css/main.a97f4537.css",
+    "static/js/main.ddd18f29.js"
   ]
 }
