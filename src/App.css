@@ -83,6 +83,7 @@ a {
   flex-wrap: wrap;
 }
 
+.projects img,
 .projects video {
   width: 17vw;
   border-radius: 15px;
@@ -90,9 +91,11 @@ a {
   transition: width 2s, height 4s;
 }
 
-.projects video:hover {
+.projects video:hover,
+.projects img:hover {
   width: 20vw;
 }
+
 
 .proj {
   padding-top: 15px;

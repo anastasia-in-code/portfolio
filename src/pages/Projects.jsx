@@ -3,14 +3,16 @@ import { Container } from "@mui/material";
 import aiapp from "../videos/aiapp.mp4";
 import gymapp from "../videos/gym.mp4";
 import musicapp from "../videos/music-app.mp4";
-import admin from '../videos/admin.mp4'
+import admin from "../videos/admin.mp4";
+import tours from '../videos/tours-agensy.png';
+import booking from "../videos/booking.png";
 
 const Projects = () => {
   return (
     <Container sx={{ pt: 10, pb: 20 }}>
       <h2>My hobby projects:</h2>
       <div className="projects">
-        <Project
+        <ProjectVideo
           name="Gym App"
           videoSrc={gymapp}
           description="Introducing GymFlex Pro a fitness project designed to target various muscle groups and 
@@ -20,7 +22,7 @@ const Projects = () => {
           gitlink="https://github.com/anastasia-in-code/gym-app"
         />
 
-        <Project
+        <ProjectVideo
           name="Face recognition app"
           videoSrc={aiapp}
           description="Face Recognition AI is a web application that utilizes external AI services to detect and highlight faces in photos. With this application, you can simply provide a link to a photo, and it will display the photo with the detected face(s) outlined in a square."
@@ -28,7 +30,7 @@ const Projects = () => {
           gitlink="https://github.com/anastasia-in-code/face-recognition"
         />
 
-        <Project
+        <ProjectVideo
           name="Music app"
           videoSrc={musicapp}
           description="A small React and Tailwind CSS responsive web application serves as a simple music player, offering an intuitive user interface for seamless navigation. "
@@ -36,19 +38,33 @@ const Projects = () => {
           gitlink="https://github.com/anastasia-in-code/music-app"
         />
 
-        <Project
+        <ProjectVideo
           name="Admin Panel"
           videoSrc={admin}
           description="This platform empowers users to access and analyze statistics and charts, providing a visually engaging and informative interface for efficient data interpretation. The combination of React.js and Material UI ensures a seamless user experience. "
-          link="https://anastasia-in-code.github.io/admin-panel-client/dashboard"
+          link="https://anastasia-in-code.github.io/admin-panel-client"
           gitlink="https://github.com/anastasia-in-code/admin-panel-client"
+        />
+
+        <Project
+          name="Tours"
+          imgSrc={tours}
+          link="https://anastasia-in-code.github.io/tour-agency/"
+          gitlink="https://github.com/anastasia-in-code/tour-agency"
+        />
+
+        <Project
+          name="Booking"
+          imgSrc={booking}
+          link="https://anastasia-in-code.github.io/booking-service/"
+          gitlink="https://github.com/anastasia-in-code/booking-service"
         />
       </div>
     </Container>
   );
 };
 
-const Project = ({ videoSrc, name, description, link, gitlink }) => {
+const ProjectVideo = ({ videoSrc, name, description, link, gitlink }) => {
   return (
     <div className="proj">
       <div style={{ display: "flex", justifyContent: "space-between" }}>
@@ -77,6 +93,34 @@ const Project = ({ videoSrc, name, description, link, gitlink }) => {
             src={videoSrc}
             muted
           />
+        </a>
+
+        <p>{description}</p>
+      </div>
+    </div>
+  );
+};
+
+const Project = ({ imgSrc, name, description, link, gitlink }) => {
+  return (
+    <div className="proj">
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <a className="highlight" target="_blank" rel="noreferrer" href={link}>
+          <h3>{name}</h3>
+        </a>
+        <a
+          className="highlight"
+          target="_blank"
+          rel="noreferrer"
+          href={gitlink}
+        >
+          <h3>GitHub</h3>
+        </a>
+      </div>
+
+      <div className="project-content">
+        <a target="_blank" rel="noreferrer" href={link}>
+          <img src={imgSrc} alt="" />
         </a>
 
         <p>{description}</p>
